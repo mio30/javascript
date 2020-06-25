@@ -17,11 +17,9 @@
       list-style-type: none;
       padding: 10px;
     }
-    #mymenu.hidden {
-      transform: translateX(0);
-    }
-    #mymenu, #mymenu2 {
+    .container_1,.container_2 {
       animation: slidein 1.6s;
+      transform: translateX(20px);
     }
     @keyframes slidein {
       0% {
@@ -41,7 +39,7 @@
     <i class="fas fa-angle-up fa-fw hidden" id="angle-up"></i>
     メニュー1
   </h2>
-  <div id="mymenu" class="hidden">
+  <div id="mymenu" class="container_1 hidden">
     <ul>
       <li class="content">中身1</li>
       <li class="content">中身2</li>
@@ -54,7 +52,7 @@
     <i class="fas fa-angle-up fa-fw hidden" id="angle-up2"></i>
     メニュー2
   </h2>
-  <div id="mymenu2" class="hidden">
+  <div id="mymenu2" class="container_2 hidden">
     <ul>
       <li class="content">中身1</li>
       <li class="content">中身2</li>
